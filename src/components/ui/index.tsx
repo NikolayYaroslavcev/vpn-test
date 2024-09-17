@@ -5,6 +5,9 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import styles from '../ui/style.module.scss';
+import {Container} from "@/components/shared";
+
+
 
 // Определение схемы валидации с помощью zod
 const schema = z.object({
@@ -35,6 +38,7 @@ const DialogModal: React.FC<DialogModalProps> = ({ selectedName }) => {
             <Dialog.Portal>
                 <Dialog.Overlay className={styles.Overlay} />
                 <Dialog.Content className={styles.Content}>
+                    <Container>
                     <Dialog.Title className={styles.Title}>Your name</Dialog.Title>
                     <Dialog.Description className={styles.Description}>
                         {selectedName || 'No name selected'}
@@ -74,6 +78,7 @@ const DialogModal: React.FC<DialogModalProps> = ({ selectedName }) => {
                             <Cross2Icon />
                         </button>
                     </Dialog.Close>
+                    </Container>
                 </Dialog.Content>
             </Dialog.Portal>
         </Dialog.Root>
