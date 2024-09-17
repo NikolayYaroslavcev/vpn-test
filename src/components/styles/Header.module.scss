@@ -1,0 +1,24 @@
+.header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.14);
+  z-index: 1000;
+}
+
+.stickyHeader {
+  background: var(--white);
+  padding: 18px 0;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.14);
+  z-index: 10;
+}
+
+
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .ImgHeader {
+    cursor: pointer;
+  }
+}

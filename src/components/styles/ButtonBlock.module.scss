@@ -1,0 +1,25 @@
+/* Блок-контейнер для кнопок */
+.buttonBlock {
+  border-radius: 24px;
+  background: var(--blue);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: rgba(0, 0, 255, 0.8);
+  }
+}
+
+/* Стили для кнопки */
+.button {
+  padding: 11px 26px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--white);
+  font-family: var(--second-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
