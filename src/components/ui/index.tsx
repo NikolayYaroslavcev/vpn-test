@@ -53,7 +53,7 @@ const DialogModal: React.FC<DialogModalProps> = ({ selectedName }) => {
                             {errors.email && <p className={styles.ErrorText}>{errors.email.message}</p>}
                         </Dialog.Description>
                         <Dialog.Description className={styles.Secure}>
-                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg  width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.5">
                                     <path
                                         d="M10.9851 7.5V5.5V4C10.9851 2.34315 9.64194 1 7.98509 1H7.39404C5.73719 1 4.39404 2.34315 4.39404 4V5.5V7.5"
